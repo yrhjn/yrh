@@ -1,0 +1,92 @@
+/* データ一覧 */
+
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #data-table th, #data-table td {
+    padding: 0 5px; /* 上下のpaddingを0に、左右のpaddingを5pxに */
+    border: 1px solid #ddd;
+  }
+  
+  #sales-list table td {
+    height: 21px;
+  }
+  
+  #sales-list table td {
+    font-size: 12px;
+  }
+  
+  
+  #sales-list table {
+    border-collapse: collapse;
+  }
+  
+  #sales-list table td {
+    height: 21px;
+    font-size: 12px;
+    min-height: 21px;
+  }
+  
+  
+  
+  #data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  #data-table td {
+    text-align: center;
+  }
+  
+  #data-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  /* データ一覧の横幅 */
+  
+  #data-table th:nth-child(1),
+  #data-table td:nth-child(1) {
+    width: 5%;
+  }
+  
+  #data-table th:nth-child(2),
+  #data-table td:nth-child(2) {
+    width: 5%;
+  }
+  
+  #data-table th:nth-child(3),
+  #data-table td:nth-child(3) {
+    width: 5%;
+  }
+  
+  #data-table th:nth-child(4),
+  #data-table td:nth-child(4) {
+    width: 3%;
+  }
+  
+  
+  /* 新規入力画面 */
+  
+  #sales-input-form table {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #sales-input-form th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  #sales-input-form th {
+    background-color: #f2f2f2;
+  }
+  
+  #sales-input-form .dispatch-container {
+    display: flex;
+    align-items: center;
+  }
+  

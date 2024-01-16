@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>売上入力フォーム</title>
+</head>
+<body>
+
+  <div id="sales-list">
+    <!-- 初期表示：テーブルの見出し行と20行分のデータ行 -->
+    <h3>データ一覧</h3>
+    <table border="1" id="data-table">
+      <tr>
+        <th>得意先コード</th>
+        <th>卸日</th>
+        <th>配車</th>
+        <th>車番</th>
+        <th>乗務員</th>
+        <th>傭車先</th>
+        <th>得意先</th>
+        <th>発地</th>
+        <th>降地</th>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 入力フォーム表示部分 -->
+
+
+
+  <form id="sales-form">
+    <div id="sales-input-form">
+        <h3>新規データ追加</h3>
+        <!-- 他の入力項目 -->
+        <label for="customernumber">得意先コード:</label>
+        <input type="text" id="customernumber">
+        
+        <label for="customer">会社名:</label>
+        <input type="text" id="customer"> <!-- readonly属性を追加 -->
+    
+        <!-- 保存ボタン -->
+        <br>
+        <button type="button" onclick="saveInputForm()">保存</button>
+    </div>
+</form>
+
+  
+
+
+
+  <script src="cmaster.js"></script>
+</body>
+</html>
