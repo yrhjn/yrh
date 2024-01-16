@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/carmaster.css">
+  <title>売上入力フォーム</title>
+</head>
+<body>
+
+  <div id="sales-list">
+    <!-- 初期表示：テーブルの見出し行と20行分のデータ行 -->
+    <h3>データ一覧</h3>
+    <table border="1" id="data-table">
+      <tr>
+        <th>フル</th>
+        <th>車番</th>
+        <th>乗務員</th>
+        <th>携帯</th>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 入力フォーム表示部分 -->
+
+
+
+  <form id="sales-form">
+    <div id="sales-input-form">
+        <h3>新規データ追加</h3>
+        <!-- 他の入力項目 -->
+        <label for="fullnumber">フル</label>
+        <input type="text" id="fullnumber">
+
+        <label for="savecar-number">車番:</label>
+        <input type="text" id="savecar-number">
+        
+        <label for="savedriver">乗務員:</label>
+        <input type="text" id="savedriver"> <!-- readonly属性を追加 -->
+
+        <label for="savephonenumber">携帯:</label>
+        <input type="text" id="savephonenumber">
+        
+    
+        <!-- 保存ボタン -->
+        <br>
+        <button type="button" onclick="saveInputForm()">保存</button>
+    </div>
+</form>
+
+  
+
+
+
+  <script src="carmaster.js"></script>
+</body>
+</html>
